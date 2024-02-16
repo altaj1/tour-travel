@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toure travel</title>
+    <!-- daisy ui and tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 p-10">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                 
+                    <div >
+                        <img src="./images/logo1.png" alt="" class="h-20">
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-center">
+                    <span><sup class="text-3xl">0</sub></span><img src="./images/cart1.png" alt="" class="h-10">
+                  <a class="btn btn-ghost text-xl">Home</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="border-dotted border-2 border-blue-200 h-24 w-24 rounded-full flex items-center justify-center "><img src="./images/man1.png" alt="" class="h-20"></div>
+                  <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                  <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                      <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <!-- this is bannre container -->
+        <div class="bander-container flex ">
+            <div class="">
+               <h1>Lets Travel</h1> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita quae eum temporibus tenetur porro commodi doloribus omnis explicabo vero?</p>
+               <h3>Total Budget: <span id="budget-tk">900</span> $</h3>
+            </div>
+            <div class="">
+                <img src="./images/banner.png" alt="">
+            </div>
+        </div>
+
+        <!-- tis is card container -->
+        <div class="flex justify-around ">
+            <div class= "grid grid-cols-3 gap-5">
+                <div  class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="./images/shajek.jpg" alt="Movie" class="h-32"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shajek</h2>
+                      <p>Cost: <span> 300 </span> $</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                <div  class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="./images/shajek.jpg" alt="Movie" class="h-32"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shajek</h2>
+                      <p>Cost: <span class="spot-price">700 </span> $</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                <div  class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="./images/shajek.jpg" alt="Movie" class="h-32"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shajek</h2>
+                      <p>Cost: <span class="spot-price"> 300 </span> $</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                <div  class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="./images/shajek.jpg" alt="Movie" class="h-32"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shajek</h2>
+                      <p>Cost: <span id="spot-price"> 300 </span> $</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                <div  class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="./images/shajek.jpg" alt="Movie" class="h-32"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shajek</h2>
+                      <p>Cost: <span id="spot-price"> 500 </span> $</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="border-double border-4 border-sky-500 ">
+                <h1>Card</h1>
+                <hr>
+                <div>
+                    <ol id="create-ol">
+
+                    </ol>
+                </div>
+                <hr>
+                <h4>Total cost: <span id="totalCost">0</span> $</h4>
+                <div class="flex gap-2">
+                    <button onclick="grandTotal('bus')" class="bg-slate-400">Bus +<span>100</span></button>
+                    <button onclick="grandTotal('train')" class="bg-slate-400">Train -<span>200</span></button>
+                    <button onclick="grandTotal('flight')" class="bg-slate-400">flight +<span>500</span></button>
+                </div>
+                <hr>
+                <h3>Grand Total : <span id="grand-total">0</span> $</h3>
+            </div>
+        </div>
+    </main>
+    <script src="./ulitis.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
